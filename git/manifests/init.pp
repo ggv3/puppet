@@ -3,7 +3,9 @@ class git {
                 ensure => 'installed',
         }
 	file {'/home/niko/git':
-		ensure => 'directory'
+		ensure => 'directory',
+		owner => 'niko',
+		group => 'niko',
 	}
 }
 
