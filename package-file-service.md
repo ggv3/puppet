@@ -28,8 +28,14 @@ Ensimmäiseksi loin uuden moduulin
 	$ cd manifests/
 	$ nano init.pp
 
->class apache {
->	package {'apache2':
->		ensure => "installed",
->	}
->}
+	class apache {
+		package {'apache2':
+			ensure => "installed",
+		}
+	}
+
+	$ sudo puppet apply --modulepath /home/niko/git/puppet/ -e 'class{"apache":}'
+
+Notice: Compiled catalog for wxdb.elisa in environment production in 0.16 seconds
+Notice: /Stage[main]/Apache/Package[apache2]/ensure: ensure changed 'purged' to 'present'
+Notice: Finished catalog run in 4.86 seconds
