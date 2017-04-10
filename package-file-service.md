@@ -28,8 +28,8 @@ Ensimmäiseksi loin uuden moduulin
 	$ cd manifests/
 	$ nano init.pp
 
-	class apache {
-        	package {'apache2':
-                	ensure => "installed",
-        	}
-	}
+>class apache {
+>	package {'apache2':
+>		ensure => "installed",
+>	}
+>}
