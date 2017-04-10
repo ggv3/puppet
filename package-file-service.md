@@ -153,7 +153,7 @@ Seuraavaksi lisäsin moduuliin osan, joka luo käyttäjän kotihakemistoon publi
 	Notice: /Stage[main]/Apache/File[/home/niko/public_html/index.html]/ensure: defined content as '{md5}dad13a7502a275e0db9c1c9c70de3ebb'
 	Notice: Finished catalog run in 0.04 seconds
 
-![alt text](https://gyazo.com/c81bf2537a242376d766226fb190c9d9 "Hello World!")
+![Image](https://github.com/nikaar/puppet/blob/master/apache/puppet2.png "Hello World!")
 
 ## Lähteet
 
