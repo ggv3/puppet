@@ -62,3 +62,6 @@ Seuraavaksi lisäsin moduuliin osan, joka varmistaa, että apache2 on käynniss�
 	Notice: /Stage[main]/Apache/Service[apache2]/ensure: ensure changed 'stopped' to 'running'
 	Notice: Finished catalog run in 1.12 seconds
 
+## File
+
+Seuraavaksi tarkoituksena oli ottaa käyttöön käyttäjien kotihakemistot ja sitä varten hyödynsin Lauri Soivin [dokumenttia](https://soivi.net/2013/installing-apache-and-php-with-puppet-module/).
