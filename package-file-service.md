@@ -55,8 +55,10 @@ Seuraavaksi lisäsin moduuliin osan, joka varmistaa, että apache2 on käynniss�
         	}	
 	}
 
+
 	$ sudo service apache2 stop
 	$ sudo puppet apply --modulepath /home/niko/git/puppet/ -e 'class{"apache":}
+
 
 	Notice: Compiled catalog for wxdb.elisa in environment production in 0.23 seconds
 	Notice: /Stage[main]/Apache/Service[apache2]/ensure: ensure changed 'stopped' to 'running'
