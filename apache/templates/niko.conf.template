@@ -1,0 +1,7 @@
+<VirtualHost *:80>
+ DocumentRoot /home/niko/public_html/
+
+ <Directory /home/niko/public_html/>
+   Require all granted
+ </Directory>
+</VirtualHost>
