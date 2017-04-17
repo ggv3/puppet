@@ -17,6 +17,7 @@ Tehtävää varten asensin omalle kotikoneelleni Virtualboxin ja sen sisälle as
 Ensimmäiseksi hain päivitykset seuraavilla komennoilla:
 
 $ sudo apt-get update
+
 $ sudo apt-get upgrade
 
 $ sudo apt-get install -y git puppet
@@ -26,10 +27,15 @@ $ sudo apt-get install -y git puppet
 Ensimmäiseksi loin uuden moduulin
 
 $ mkdir ssh
+
 $ cd ssh/
+
 $ mkdir manifests
+
 $ mkdir templates
+
 $ cd manifests/
+
 $ nano init.pp
 
 	class ssh {
@@ -49,7 +55,9 @@ $ sudo puppet apply --modulepath /home/niko/git/puppet/ -e 'class{"ssh":}'
 Seuraavaksi loin uuden templaten joka vaihtaa SSH:n portin ja päivitin init.pp:n.
 
 $ sudo cp /etc/ssh/sshd_config /home/niko/git/puppet/ssh/templates/
+
 $ sudo chown niko:niko /home/niko/git/puppet/ssh/templates/sshd_config 
+
 $ nano /home/niko/git/puppet/ssh/templates/sshd_config
 
 	Port 2222
