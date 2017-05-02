@@ -2,6 +2,7 @@ class apache {
 
 	package {'apache2':
 		ensure => "installed",
+		allowcdrom => "true",
 	}
 
 	service {'apache2':
@@ -54,6 +55,14 @@ class apache {
 		ensure => "absent",
 		notify => Service["apache2"],
 		require => Package["apache2"],
+	}
+
+	file {'/etc/hosts':
+		content => template("apache/hosts.template"),
+		owner => "root",
+		group => "root",
+		notify => Service["apache2"],
+
 	}
 }
 
