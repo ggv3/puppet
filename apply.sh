@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo puppet apply --modulepath /home/niko/git/puppet -e 'class{"curl":}'
-sudo puppet apply --modulepath /home/niko/git/puppet -e 'class{"nodejs":}'
-sudo puppet apply --modulepath /home/niko/git/puppet -e 'class{"phonegap":}'
-sudo puppet apply --modulepath /home/niko/git/puppet -e 'class{"brackets":}'
+sudo puppet apply --modulepath /modules -e 'class{"curl":}'
+sudo puppet apply --modulepath /modules -e 'class{"nodejs":}'
+sudo puppet apply --modulepath /modules -e 'class{"phonegap":}'
+sudo puppet apply --modulepath /modules -e 'class{"brackets":}'
