@@ -2,6 +2,7 @@ class brackets {
 	
 	exec {'sudo add-apt-repository --allow-unauthenticated ppa:webupd8team/brackets':
 		path => ["/usr/bin"],
+		returns => [0, 2],
 	}
 
 	exec {'apt-get update':
