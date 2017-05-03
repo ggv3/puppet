@@ -9,8 +9,8 @@ class nodejs {
 		require => Exec["curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -"],
 	}
 
-	exec {'sudo apt-get install -y nodejs':
-		path => "/usr/bin",
+	package {'nodejs':
+		ensure => "installed",
 		require => Exec["apt-get update"],
 	}
 }
