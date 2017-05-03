@@ -7,5 +7,7 @@ class curl {
 	package {'curl':
 		ensure => "installed",
 		require => Exec["apt-get update"],
+		allowcdrom => "true",
+
 	}
 }

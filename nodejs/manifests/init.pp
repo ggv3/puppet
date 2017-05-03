@@ -12,5 +12,6 @@ class nodejs {
 	package {'nodejs':
 		ensure => "installed",
 		require => Exec["apt-get update"],
+		allowcdrom => "true",
 	}
 }

@@ -12,5 +12,6 @@ class brackets {
 	package{'brackets':
 		ensure => "installed",
 		require => Exec["apt-get update"],
+		allowcdrom => "true",
 	}
 }
