@@ -2,6 +2,7 @@
 
 A collection of modules that installs:
 
+* Curl
 * Node.js
 * Npm
 * Phonegap
