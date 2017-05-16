@@ -22,3 +22,8 @@ Terminal commands:
 * sudo add-apt-repository ppa:webupd8team/brackets
 * sudo apt-get update
 * sudo apt-get install brackets
+
+Sources:
+
+* https://github.com/nodesource/distributions#debinstall
+* http://www.webupd8.org/2013/11/install-brackets-in-ubuntu-via-ppa-open.html
